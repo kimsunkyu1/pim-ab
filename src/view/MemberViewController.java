@@ -74,7 +74,7 @@ public class MemberViewController implements Initializable {
 		// btnDelete.setOnMouseClicked(e -> handleDelete());		
 		btnExecute.setOnMouseClicked(event -> handleExecute());	
 		
-		// loadMemberTableView();
+		loadMemberTableView();
 	}
 	String str = ""; // 인스턴스 변수 - 객체 변수, 객체가 존재하는 동안 메모리에 존재
 	@FXML 
