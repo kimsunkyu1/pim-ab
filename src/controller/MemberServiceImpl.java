@@ -10,12 +10,14 @@ import model.MemberDAO;
 
 public class MemberServiceImpl implements MemberService {
 	
-	private ArrayList<Member> memberList; // х╦©Ь а╓╨╦ евюл╨М©║ ╦егн╣г╢б ╟╢ц╪
-	private Member memberDTO; // х╦©Ь а╓╨╦ ╥╧дз╣Е©║ ╦егн╣г╢б ╟╢ц╪
-	private MemberDAO memberDAO; // х╦©Ь а╓╨╦ цЁ╦╝╦╕ ю╖гь фдюо ╤г╢б ╣╔юлем╨ёюл╫╨╦╕ а╒╠ыго╢б ╟╢ц╪
+	private ArrayList<Member> memberList; // х╦О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫л╨О©╫ О©╫О©╫О©╫н╣г╢О©╫ О©╫О©╫ц╪
+	private Member memberDTO; // х╦О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫з╣Е©║ О©╫О©╫О©╫н╣г╢О©╫ О©╫О©╫ц╪
+	private MemberDAO memberDAO; // х╦О©╫О©╫ О©╫О©╫О©╫О©╫ цЁО©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫г╢О©╫ О©╫О©╫О©╫О©╫О©╫м╨О©╫О©╫л╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╢О©╫ О©╫О©╫ц╪
 	
 	public MemberServiceImpl() {
-		this(new File("member.txt"));		
+		this(new File("member.txt"));
+		//this К┼■ М≤└Л·╛ Й╟²Л╡╢К╔╪ Л╖─Л═∙М∙≤ЙЁ═
+		//this(К╖╓Й╟°КЁ─Л┬≤)К┼■ М≤└Л·╛ Й╟²Л╡╢Л²≤ Л┐²Л└╠Л·░
 	}
 	public MemberServiceImpl(File file) {
 		memberDAO = new MemberDAO(file);

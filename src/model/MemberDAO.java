@@ -25,8 +25,8 @@ public class MemberDAO {
 		}
 	}
 	public ArrayList<Member> selectAll() { 
-		// ÀÔ·ÂÇÑ ¸Þ¸ð¸® »ó¿¡ Á¸ÀçÇÏ´Â ¸ðµç ¸â¹ö Á¤º¸¸¦ °¡Á®¿Í Ãâ·Â			
-		return memberList;	
+		// ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½			
+		return memberList;
 	}
 	
 	public Member selectMember(Member member) {
@@ -38,7 +38,7 @@ public class MemberDAO {
 	}
 	
 	public int searchByID(Member member) { 
-		int ret = -1; // ret°¡ 0 ÀÌ»óÀÌ¸é °Ë»ö ¼º°ø, -1 ÀÌ¸é °Ë»ö ½ÇÆÐ
+		int ret = -1; // retï¿½ï¿½ 0 ï¿½Ì»ï¿½ï¿½Ì¸ï¿½ ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½, -1 ï¿½Ì¸ï¿½ ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½
 		int index = 0;
 		for(Member m : memberList) {
 			if(m.getUid().equals(member.getUid())) {
@@ -54,7 +54,7 @@ public class MemberDAO {
 		int ret = -1;
 		try {
 			int index = searchByID(member);
-			if(index < 0) { // -1ÀÌ¸é °Ë»ö ½ÇÆÐ, µî·Ï °¡´ÉÇÔ
+			if(index < 0) { // -1ï¿½Ì¸ï¿½ ï¿½Ë»ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				fw = new MemberFileWriter(file);
 				memberList.add(member);
 				fw.saveMember(memberList);
@@ -67,13 +67,13 @@ public class MemberDAO {
 	}
 	
 	public int update(Member member) {
-		int ret = -1; // 0 ÀÌ»óÀÌ¸é ÇØ´ç ¾ÆÀÌµð°¡ Á¸ÀçÇÏ¹Ç·Î ¼öÁ¤, -1ÀÌÇÏÀÌ¸é ¼öÁ¤ ½ÇÆÐ		
+		int ret = -1; // 0 ï¿½Ì»ï¿½ï¿½Ì¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¹Ç·ï¿½ ï¿½ï¿½ï¿½ï¿½, -1ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½		
 		
 		
 		return ret;
 	}	
 	public int delete(Member member) {		
-		int ret = -1; // 0 ÀÌ»óÀÌ¸é ÇØ´ç ¾ÆÀÌµð°¡ Á¸ÀçÇÏ¹Ç·Î »èÁ¦, -1ÀÌÇÏÀÌ¸é »èÁ¦ ½ÇÆÐ
+		int ret = -1; // 0 ï¿½Ì»ï¿½ï¿½Ì¸ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¹Ç·ï¿½ ï¿½ï¿½ï¿½ï¿½, -1ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 		return ret;
 	}

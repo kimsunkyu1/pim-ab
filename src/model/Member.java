@@ -6,9 +6,9 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class Member { // DBÀÇ ·¹ÄÚµå¿Í ¸ÅÇÎµÇ´Â °´Ã¼
-	private StringProperty uid; // DBÀÇ ÇÊµå¿Í ¸ÅÇÎ
-	private StringProperty upw;
+public class Member { // DBï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ï¿½ ï¿½ï¿½ï¿½ÎµÇ´ï¿½ ï¿½ï¿½Ã¼
+	private StringProperty uid; // DBï¿½ï¿½ ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private StringProperty upw; //StringPropertyëŠ” ìë°”fxì—ì„œë§Œ ì €ì¥ê°€ëŠ¥
 	private StringProperty uname;
 	private final StringProperty mobilePhone;
 	/*
